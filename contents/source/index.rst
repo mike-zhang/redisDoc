@@ -8,15 +8,17 @@ redis简介
 :Release: |version|
 :Date: |today|
 
-redis是一个开源的内存数据库。
-=============================================
-
-内容示例:
-
 .. toctree::
    :maxdepth: 2
 
-   test1.rst 
+   introduction.rst 
+   datatypes.rst
+   script_support.rst
+   persistent.rst
+   redis_cluster.rst   
+   mode_pubsub.rst
+   redis_rpc.rst
+   
 
 
 
