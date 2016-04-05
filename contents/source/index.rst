@@ -21,7 +21,8 @@ Redis是一个开源的、高性能的、基于键值对的缓存与存储系统
    :maxdepth: 2
 
    install.rst   
-   datatypes.rst
+   basic_operation.rst
+   datatypes.rst   
    script_support.rst
    persistent.rst
    redis_cluster.rst   
