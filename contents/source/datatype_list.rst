@@ -75,4 +75,4 @@
     
 
 
-其它命令参考官方手册 ： http://redis.io/commands
+其它命令参考官方手册 ： http://redis.io/commands#list

@@ -47,4 +47,4 @@
 
     HEXISTS key field
     
-其它hashs命令参考官方手册 ： http://redis.io/commands#hashs
+其它hashs命令参考官方手册 ： http://redis.io/commands#hash
