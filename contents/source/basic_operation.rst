@@ -40,5 +40,13 @@ pattern支持glob风格通配符格式，具体如下：
     
     EXISTS key
     
+   
+* EXPIRE
+设置key的超时时间TTL(Time To Live),生存时间到期后键会自动被删除，格式：
+::
+
+    EXPIRE key seconds
     
+    
+
     
