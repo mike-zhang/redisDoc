@@ -11,6 +11,15 @@ redis安装及配置
     cd redis-3.0.7/
     make
     make install
+    
+安装后，在/usr/local/bin下面有如下文件：
+::
+
+    redis-server     服务器    
+    redis-cli        命令行客户端
+    redis-benchmark  性能测试工具    
+    redis-check-aof  AOF文件修复工具    
+    redis-check-dump RDB文件检查工具    
 
 启动
 ---------------
