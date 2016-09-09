@@ -1,0 +1,301 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>列表类型 &mdash; redis文档 1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="redis文档 1.0.0 documentation" href="index.html"/>
+        <link rel="up" title="数据模型" href="datatypes.html"/>
+        <link rel="next" title="集合类型" href="datatype_sets.html"/>
+        <link rel="prev" title="散列类型" href="datatype_hash.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> redis文档
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">redis安装及配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic_operation.html">基本操作</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="datatypes.html">数据模型</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="datatype_string.html">字符串类型</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datatype_hash.html">散列类型</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">列表类型</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datatype_sets.html">集合类型</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datatype_ordersets.html">有序集合类型</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="redis_transactions.html">redis事务</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clients.html">redis客户端</a></li>
+<li class="toctree-l1"><a class="reference internal" href="redis_mq.html">redis作为消息队列</a></li>
+<li class="toctree-l1"><a class="reference internal" href="script_support.html">脚本支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="persistent.html">持久化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="redis_cluster.html">集群</a></li>
+<li class="toctree-l1"><a class="reference internal" href="redis_rpc.html">RPC调用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="redis_mysql.html">与mysql交互</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">redis文档</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="datatypes.html">数据模型</a> &raquo;</li>
+      
+    <li>列表类型</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/datatype_list.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>列表类型<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>列表类型（list）可以存储一个有序的字符串列表，常用的操作是向列表两端添加元素，或者获得列表的某一个片段。</p>
+<p>列表类型内部是使用双向链表（double linked list）实现的，所以向列表两端添加元素的时间复杂度为O(1)，获取越接近两端的元素速度就越快。
+这意味着即使是一个有几千万个元素的列表，获取头部或尾部的10条记录也是极快的（和从只有20个元素的列表中获取头部或尾部的10条记录的速度是一样的）。</p>
+<p>这种特性使列表类型能非常快速地完成关系数据库难以应付的场景：
+如社交网站的新鲜事，我们关心的只是最新的内容，使用列表类型存储，
+即使新鲜事的总数达到几千万个，获取其中最新的100条数据也是极快的。
+同样因为在两端插入记录的时间复杂度是O(1)，列表类型也适合用来记录日志，可以保证加入新日志的速度不会受到已有日志数量的影响。</p>
+<p>常用命令如下：</p>
+<ul class="simple">
+<li>LPUSH</li>
+</ul>
+<p>向列表的左边增加元素，返回增加元素后列表的长度</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">LPUSH</span> <span class="n">key</span> <span class="n">value</span><span class="p">[</span> <span class="n">value</span><span class="o">..</span><span class="p">]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>RPUSH</li>
+</ul>
+<p>向列表的右边增加元素</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">RPUSH</span> <span class="n">key</span> <span class="n">value</span><span class="p">[</span> <span class="n">value</span><span class="o">..</span><span class="p">]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>LPOP</li>
+</ul>
+<p>从列表左边移除一个元素，并返回该元素值</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">LPOP</span> <span class="n">key</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>RPOP</li>
+</ul>
+<p>从列表的右侧移除一个元素，并返回该元素值</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">RPOP</span> <span class="n">key</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>LLEN</li>
+</ul>
+<p>返回列表元素个数，键不存在时返回0</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">LLEN</span> <span class="n">key</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>LRANGE</li>
+</ul>
+<p>获取列表片段，start和stop支持负数，-1表示右数第一个</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">LRANGE</span> <span class="n">key</span> <span class="n">start</span> <span class="n">stop</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>LREM</li>
+</ul>
+<p>删除列表中指定的值，返回删除的元素个数</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">LREM</span> <span class="n">key</span> <span class="n">count</span> <span class="n">value</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>LINDEX</li>
+</ul>
+<p>获取指定索引元素值</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">LINDEX</span> <span class="n">key</span> <span class="n">index</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>LSET</li>
+</ul>
+<p>设置指定索引的元素值</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">LSET</span> <span class="n">key</span> <span class="n">index</span> <span class="n">value</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>LTRIM</li>
+</ul>
+<p>只保留列表指定片段，删除其他元素</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">LTRIM</span> <span class="n">key</span> <span class="n">start</span> <span class="n">end</span>
+</pre></div>
+</div>
+<p>其它命令参考官方手册 ： <a class="reference external" href="http://redis.io/commands#list">http://redis.io/commands#list</a></p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="datatype_sets.html" class="btn btn-neutral float-right" title="集合类型" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="datatype_hash.html" class="btn btn-neutral" title="散列类型" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Mike_Zhang.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
