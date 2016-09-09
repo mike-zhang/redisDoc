@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'redis文档'
-copyright = u'2015, Mike_Zhang'
+copyright = u'2016, Mike_Zhang@live.com'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

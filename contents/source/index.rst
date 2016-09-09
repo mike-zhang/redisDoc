@@ -20,7 +20,8 @@ Redis是一个开源的、高性能的、基于键值对的缓存与存储系统
 .. toctree::
    :maxdepth: 2
 
-   install.rst   
+   install.rst
+   redis_dbms.rst
    basic_operation.rst
    datatypes.rst
    redis_transactions.rst
