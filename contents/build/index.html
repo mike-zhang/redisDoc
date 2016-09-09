@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>redis简介 &mdash; redis文档 1.0.0 documentation</title>
+  <title>redis文档 1.0.0 documentation</title>
   
 
   
@@ -30,8 +30,7 @@
   
 
   
-    <link rel="top" title="redis文档 1.0.0 documentation" href="#"/>
-        <link rel="next" title="redis安装及配置" href="install.html"/> 
+    <link rel="top" title="None" href="index.html#document-index"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -49,7 +48,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> redis文档
+            <a href="index.html#document-index" class="icon icon-home"> redis文档
           
 
           
@@ -65,13 +64,6 @@
           
 
           
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
 
           
         </div>
@@ -81,17 +73,17 @@
             
             
                 <ul>
-<li class="toctree-l1"><a class="reference internal" href="install.html">redis安装及配置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="basic_operation.html">基本操作</a></li>
-<li class="toctree-l1"><a class="reference internal" href="datatypes.html">数据模型</a></li>
-<li class="toctree-l1"><a class="reference internal" href="redis_transactions.html">redis事务</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clients.html">redis客户端</a></li>
-<li class="toctree-l1"><a class="reference internal" href="redis_mq.html">redis作为消息队列</a></li>
-<li class="toctree-l1"><a class="reference internal" href="script_support.html">脚本支持</a></li>
-<li class="toctree-l1"><a class="reference internal" href="persistent.html">持久化</a></li>
-<li class="toctree-l1"><a class="reference internal" href="redis_cluster.html">集群</a></li>
-<li class="toctree-l1"><a class="reference internal" href="redis_rpc.html">RPC调用</a></li>
-<li class="toctree-l1"><a class="reference internal" href="redis_mysql.html">与mysql交互</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-install">redis安装及配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-basic_operation">基本操作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-datatypes">数据模型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-redis_transactions">redis事务</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-clients">redis客户端</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-redis_mq">redis作为消息队列</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-script_support">脚本支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-persistent">持久化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-redis_cluster">集群</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-redis_rpc">RPC调用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-redis_mysql">与mysql交互</a></li>
 </ul>
 
             
@@ -105,7 +97,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="#">redis文档</a>
+        <a href="index.html#document-index">redis文档</a>
       </nav>
 
 
@@ -114,19 +106,17 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="#">Docs</a> &raquo;</li>
+    <li><a href="index.html#document-index">Docs</a> &raquo;</li>
       
-    <li>redis简介</li>
+    <li>redis文档 1.0.0 documentation</li>
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -154,39 +144,1027 @@
 <p>官方网站：<a class="reference external" href="http://redis.io/">http://redis.io/</a></p>
 <p>开发语言：C</p>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="install.html">redis安装及配置</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install.html#id1">安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install.html#id2">启动</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install.html#id3">配置</a></li>
-</ul>
+<span id="document-install"></span><div class="section" id="redis">
+<h2>redis安装及配置<a class="headerlink" href="#redis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>安装<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">download</span><span class="o">.</span><span class="n">redis</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">redis</span><span class="o">-</span><span class="mf">3.0</span><span class="o">.</span><span class="mf">7.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">tar</span> <span class="n">zxvf</span> <span class="n">redis</span><span class="o">-</span><span class="mf">3.0</span><span class="o">.</span><span class="mf">7.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">cd</span> <span class="n">redis</span><span class="o">-</span><span class="mf">3.0</span><span class="o">.</span><span class="mi">7</span><span class="o">/</span>
+<span class="n">make</span>
+<span class="n">make</span> <span class="n">install</span>
+</pre></div>
+</td></tr></table></div>
+<p>安装后，在/usr/local/bin下面有如下文件：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span>redis-server     服务器
+redis-cli        命令行客户端
+redis-benchmark  性能测试工具
+redis-check-aof  AOF文件修复工具
+redis-check-dump RDB文件检查工具
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id2">
+<h3>启动<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>不指定配置文件启动，在控制台执行：redis-server</p>
+<p>指定配置文件启动，需要加上参数：redis-server /etc/myredis.conf</p>
+<p>指定端口启动：redis-server &#8211;port 6379</p>
+<p>以salve方式启动：redis-server &#8211;port 6380 &#8211;slaveof 127.0.0.1 6379</p>
+</div></blockquote>
+<p><em>可以使用redis自带的redis-cli作为客户端连接服务器</em></p>
+</div>
+<div class="section" id="id3">
+<h3>配置<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Redis默认不是以守护进程的方式运行，可以通过该配置项修改，使用yes启用守护进程</p>
+<blockquote>
+<div><p>daemonize no</p>
+</div></blockquote>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="basic_operation.html">基本操作</a></li>
-<li class="toctree-l1"><a class="reference internal" href="datatypes.html">数据模型</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="datatype_string.html">字符串类型</a></li>
-<li class="toctree-l2"><a class="reference internal" href="datatype_hash.html">散列类型</a></li>
-<li class="toctree-l2"><a class="reference internal" href="datatype_list.html">列表类型</a></li>
-<li class="toctree-l2"><a class="reference internal" href="datatype_sets.html">集合类型</a></li>
-<li class="toctree-l2"><a class="reference internal" href="datatype_ordersets.html">有序集合类型</a></li>
-</ul>
+<li><p class="first">当Redis以守护进程方式运行时，Redis默认会把pid写入/var/run/redis.pid文件，可以通过pidfile指定</p>
+<blockquote>
+<div><p>pidfile /var/run/redis.pid</p>
+</div></blockquote>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="redis_transactions.html">redis事务</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clients.html">redis客户端</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="client_c.html">c客户端</a></li>
-<li class="toctree-l2"><a class="reference internal" href="client_python.html">python客户端</a></li>
-</ul>
+<li><p class="first">指定Redis监听端口，默认端口为6379，作者在自己的一篇博文中解释了为什么选用6379作为默认端口，因为6379在手机按键上MERZ对应的号码，而MERZ取自意大利歌女Alessia Merz的名字</p>
+<blockquote>
+<div><p>port 6379</p>
+</div></blockquote>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="redis_mq.html">redis作为消息队列</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="mq_workqueue.html">工作队列模式</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mq_pubsub.html">订阅发布模式</a></li>
-</ul>
+<li><p class="first">绑定的主机地址</p>
+<blockquote>
+<div><p>bind 127.0.0.1</p>
+</div></blockquote>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="script_support.html">脚本支持</a></li>
-<li class="toctree-l1"><a class="reference internal" href="persistent.html">持久化</a></li>
-<li class="toctree-l1"><a class="reference internal" href="redis_cluster.html">集群</a></li>
-<li class="toctree-l1"><a class="reference internal" href="redis_rpc.html">RPC调用</a></li>
-<li class="toctree-l1"><a class="reference internal" href="redis_mysql.html">与mysql交互</a></li>
+<li><p class="first">当客户端闲置多长时间后关闭连接，如果指定为0，表示关闭该功能</p>
+<blockquote>
+<div><p>timeout 300</p>
+</div></blockquote>
+</li>
+<li><p class="first">指定日志记录级别，Redis总共支持四个级别：debug、verbose、notice、warning，默认为verbose</p>
+<blockquote>
+<div><p>loglevel verbose</p>
+</div></blockquote>
+</li>
+<li><p class="first">日志记录方式，默认为标准输出，如果配置Redis为守护进程方式运行，而这里又配置为日志记录方式为标准输出，则日志将会发送给/dev/null</p>
+<blockquote>
+<div><p>logfile stdout</p>
+</div></blockquote>
+</li>
+<li><p class="first">设置数据库的数量，默认数据库为0，可以使用SELECT &lt;dbid&gt;命令在连接上指定数据库id</p>
+<blockquote>
+<div><p>databases 16</p>
+</div></blockquote>
+</li>
+<li><p class="first">指定在多长时间内，有多少次更新操作，就将数据同步到数据文件，可以多个条件配合</p>
+<blockquote>
+<div><p>save &lt;seconds&gt; &lt;changes&gt;</p>
+<p>Redis默认配置文件中提供了三个条件：</p>
+<p>save 900 1</p>
+<p>save 300 10</p>
+<p>save 60 10000</p>
+<p>分别表示900秒（15分钟）内有1个更改，300秒（5分钟）内有10个更改以及60秒内有10000个更改。</p>
+</div></blockquote>
+</li>
+<li><p class="first">指定存储至本地数据库时是否压缩数据，默认为yes，Redis采用LZF压缩，如果为了节省CPU时间，可以关闭该选项，但会导致数据库文件变的巨大</p>
+<p>rdbcompression yes</p>
+</li>
+<li><p class="first">指定本地数据库文件名，默认值为dump.rdb</p>
+<p>dbfilename dump.rdb</p>
+</li>
+<li><p class="first">指定本地数据库存放目录</p>
+<p>dir ./</p>
+</li>
+<li><p class="first">设置当本机为slav服务时，设置master服务的IP地址及端口，在Redis启动时，它会自动从master进行数据同步</p>
+<p>slaveof &lt;masterip&gt; &lt;masterport&gt;</p>
+</li>
+<li><p class="first">当master服务设置了密码保护时，slav服务连接master的密码</p>
+<p>masterauth &lt;master-password&gt;</p>
+</li>
+<li><p class="first">设置Redis连接密码，如果配置了连接密码，客户端在连接Redis时需要通过AUTH &lt;password&gt;命令提供密码，默认关闭</p>
+<p>requirepass foobared</p>
+</li>
+<li><p class="first">设置同一时间最大客户端连接数，默认无限制，Redis可以同时打开的客户端连接数为Redis进程可以打开的最大文件描述符数，如果设置 maxclients 0，表示不作限制。当客户端连接数到达限制时，Redis会关闭新的连接并向客户端返回max number of clients reached错误信息</p>
+<p>maxclients 128</p>
+</li>
+<li><p class="first">指定Redis最大内存限制，Redis在启动时会把数据加载到内存中，达到最大内存后，Redis会先尝试清除已到期或即将到期的Key，当此方法处理 后，仍然到达最大内存设置，将无法再进行写入操作，但仍然可以进行读取操作。Redis新的vm机制，会把Key存放内存，Value会存放在swap区</p>
+<p>maxmemory &lt;bytes&gt;</p>
+</li>
+<li><p class="first">指定是否在每次更新操作后进行日志记录，Redis在默认情况下是异步的把数据写入磁盘，如果不开启，可能会在断电时导致一段时间内的数据丢失。因为 redis本身同步数据文件是按上面save条件来同步的，所以有的数据会在一段时间内只存在于内存中。默认为no</p>
+<p>appendonly no</p>
+</li>
+<li><p class="first">指定更新日志文件名，默认为appendonly.aof</p>
+<blockquote>
+<div><p>appendfilename appendonly.aof</p>
+</div></blockquote>
+</li>
+<li><p class="first">指定更新日志条件，共有3个可选值：
+no：表示等操作系统进行数据缓存同步到磁盘（快）
+always：表示每次更新操作后手动调用fsync()将数据写到磁盘（慢，安全）
+everysec：表示每秒同步一次（折衷，默认值）</p>
+<p>appendfsync everysec</p>
+</li>
+<li><p class="first">指定是否启用虚拟内存机制，默认值为no，简单的介绍一下，VM机制将数据分页存放，由Redis将访问量较少的页即冷数据swap到磁盘上，访问多的页面由磁盘自动换出到内存中（在后面的文章我会仔细分析Redis的VM机制）</p>
+<blockquote>
+<div><p>vm-enabled no</p>
+</div></blockquote>
+</li>
+<li><p class="first">虚拟内存文件路径，默认值为/tmp/redis.swap，不可多个Redis实例共享</p>
+<blockquote>
+<div><p>vm-swap-file /tmp/redis.swap</p>
+</div></blockquote>
+</li>
+<li><p class="first">将所有大于vm-max-memory的数据存入虚拟内存,无论vm-max-memory设置多小,所有索引数据都是内存存储的(Redis的索引数据 就是keys),也就是说,当vm-max-memory设置为0的时候,其实是所有value都存在于磁盘。默认值为0</p>
+<blockquote>
+<div><p>vm-max-memory 0</p>
+</div></blockquote>
+</li>
+<li><p class="first">Redis swap文件分成了很多的page，一个对象可以保存在多个page上面，但一个page上不能被多个对象共享，vm-page-size是要根据存储的 数据大小来设定的，作者建议如果存储很多小对象，page大小最好设置为32或者64bytes；如果存储很大大对象，则可以使用更大的page，如果不 确定，就使用默认值</p>
+<blockquote>
+<div><p>vm-page-size 32</p>
+</div></blockquote>
+</li>
+<li><p class="first">设置swap文件中的page数量，由于页表（一种表示页面空闲或使用的bitmap）是在放在内存中的，，在磁盘上每8个pages将消耗1byte的内存。</p>
+<blockquote>
+<div><p>vm-pages 134217728</p>
+</div></blockquote>
+</li>
+<li><p class="first">设置访问swap文件的线程数,最好不要超过机器的核数,如果设置为0,那么所有对swap文件的操作都是串行的，可能会造成比较长时间的延迟。默认值为4</p>
+<blockquote>
+<div><p>vm-max-threads 4</p>
+</div></blockquote>
+</li>
+<li><p class="first">设置在向客户端应答时，是否把较小的包合并为一个包发送，默认为开启</p>
+<p>glueoutputbuf yes</p>
+</li>
+<li><p class="first">指定在超过一定的数量或者最大的元素超过某一临界值时，采用一种特殊的哈希算法</p>
+<p>hash-max-zipmap-entries 64</p>
+<p>hash-max-zipmap-value 512</p>
+</li>
+<li><p class="first">指定是否激活重置哈希，默认为开启（后面在介绍Redis的哈希算法时具体介绍）</p>
+<p>activerehashing yes</p>
+</li>
+<li><p class="first">指定包含其它的配置文件，可以在同一主机上多个Redis实例之间使用同一份配置文件，而同时各个实例又拥有自己的特定配置文件</p>
+<p>include /path/to/local.conf</p>
+</li>
+</ol>
+</div>
+</div>
+<span id="document-basic_operation"></span><div class="section" id="id1">
+<h2>基本操作<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>这里字符串类型为例描述redis的基本操作命令，其它数据类型参考文档。</p>
+<ul class="simple">
+<li>SET</li>
 </ul>
+<p>如果key不存在，该命令可以完成添加操作；如果key存在，该命令实现更新操作；</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SET</span> <span class="n">key</span> <span class="n">value</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>GET</li>
+</ul>
+<p>获取某个key所对应的值，格式如下:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>DEL</li>
+</ul>
+<p>删除操作，格式如下：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">DEL</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>KEYS</li>
+</ul>
+<p>获取符合规律的键名列表，格式如下：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">KEYS</span> <span class="n">pattern</span>
+</pre></div>
+</td></tr></table></div>
+<p>pattern支持glob风格通配符格式，具体如下：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span>?       匹配一个字符
+*       匹配任意个（包括0个）字符
+[]      匹配括号间的任一字符，可以使用&quot;-&quot;符号表示一个
+        范围，如a[b-d]可以匹配&quot;ab&quot;,&quot;ac&quot;和&quot;ad&quot;
+\x      匹配字符x，用于转义符号。
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>EXISTS</li>
+</ul>
+<p>用于判断一个键是否存在，格式：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">EXISTS</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>EXPIRE</li>
+</ul>
+<p>设置key的超时时间TTL(Time To Live),生存时间到期后键会自动被删除，格式：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">EXPIRE</span> <span class="n">key</span> <span class="n">seconds</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<span id="document-datatypes"></span><div class="section" id="id1">
+<h2>数据模型<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Redis是REmote DIctionary Server（远程字典服务器）的缩写，
+它以字典结构存储数据，并允许其他应用通过TCP协议读写字典中的内容。
+同大多数脚本语言中的字典一样，Redis字典中的键值除了可以是字符串，还可以是其他数据类型。
+到目前为止 Redis 支持的键值数据类型如下：</p>
+<div class="toctree-wrapper compound">
+<span id="document-datatype_string"></span><div class="section" id="id1">
+<h3>字符串类型<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>字符串是redis最基础的数据类型，它能存储任何形式的字符串，包括二进制数据。
+一个字符串类型键允许存储的数据的最大容量是512M。
+常用命令如下：</p>
+<ul class="simple">
+<li>SET</li>
+</ul>
+<p>赋值操作</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SET</span> <span class="n">key</span> <span class="n">value</span>
+</pre></div>
+</td></tr></table></div>
+<p>示例：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SET</span> <span class="n">a</span> <span class="mi">5</span> <span class="o">==&gt;</span> <span class="n">OK</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>GET</li>
+</ul>
+<p>取值操作</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<p>示例：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="n">a</span>  <span class="o">==&gt;</span> <span class="s2">&quot;5&quot;</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>INCR</li>
+</ul>
+<p>递增操作，键不存在时创建并赋0，否则+1</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">INCR</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<p>示例：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">INCR</span> <span class="n">a</span> <span class="o">==&gt;</span> <span class="mi">6</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>DECR</li>
+</ul>
+<p>递减操作</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">DECR</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<p>示例：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">DECR</span> <span class="n">a</span> <span class="o">==&gt;</span> <span class="mi">5</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>INCRBY</li>
+</ul>
+<p>与incr一样，不过可以指定增加的数值</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">INCRBY</span> <span class="n">key</span> <span class="n">num</span>
+</pre></div>
+</td></tr></table></div>
+<p>示例：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">INCRBY</span> <span class="n">a</span> <span class="mi">10</span>   <span class="o">==&gt;</span>  <span class="mi">15</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>APPEND</li>
+</ul>
+<p>追加,返回追加后字符串长度</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">APPEND</span> <span class="n">key</span> <span class="n">value</span>
+</pre></div>
+</td></tr></table></div>
+<p>示例：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">APPEND</span> <span class="n">a</span> <span class="mi">6</span>  <span class="o">==&gt;</span>  <span class="mi">156</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>STRLEN</li>
+</ul>
+<p>获取字符串长度</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">STRLEN</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<p>示例：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">STRLEN</span> <span class="n">a</span>  <span class="o">==&gt;</span> <span class="mi">3</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>MSET</li>
+</ul>
+<p>同时设置多个键值</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">MSET</span> <span class="n">key</span> <span class="n">value</span><span class="p">[</span><span class="n">key2</span> <span class="n">value2</span> <span class="o">...</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<p>示例：</p>
+<blockquote>
+<div>MSET key1 1 key2 2 ==&gt; OK</div></blockquote>
+<ul class="simple">
+<li>MGET</li>
+</ul>
+<p>同时获取多个键值</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">MGET</span> <span class="n">key1</span> <span class="n">key2</span> <span class="o">=&gt;</span>
+<span class="mi">1</span><span class="p">)</span> <span class="s2">&quot;1&quot;</span>
+<span class="mi">2</span><span class="p">)</span> <span class="s2">&quot;2&quot;</span>
+</pre></div>
+</td></tr></table></div>
+<p>其它string命令参考官方手册 ： <a class="reference external" href="http://redis.io/commands#string">http://redis.io/commands#string</a></p>
+</div>
+<span id="document-datatype_hash"></span><div class="section" id="id1">
+<h3>散列类型<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>散列类型（hash）的键值也是一种字典结构，其存储了字段（field）和字段值的映射，
+但字段值只能是字符串，不支持其他数据类型，也就是散列类型不能嵌套其他的数据类型。</p>
+<p><em>除了散列类型，Redis 的其他数据类型同样不支持数据类型嵌套。比如集合类型的每个元素都只能是字符串，不能是另一个集合或散列表等。</em></p>
+<p>散列类型适合存储对象：使用对象类别和 ID 构成键名，使用字段表示对象的属性，
+而字段值则存储属性值。</p>
+<p>常用命令如下：
+* HSET
+设置或修改字段值</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">HSET</span> <span class="n">key</span> <span class="n">field</span> <span class="n">value</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>HGET</li>
+</ul>
+<p>获取字段值</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">HGET</span> <span class="n">key</span> <span class="n">field</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>HMSET</li>
+</ul>
+<p>同时设置多个字段</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">HMSET</span> <span class="n">key</span> <span class="n">field</span> <span class="n">value</span> <span class="p">[</span><span class="n">field</span> <span class="n">value</span> <span class="o">...</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>HMGET</li>
+</ul>
+<p>同时获取多个字段值</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">HMGET</span> <span class="n">key</span> <span class="n">field</span> <span class="p">[</span><span class="n">field</span> <span class="o">...</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>HGETALL</li>
+</ul>
+<p>获取键中所有字段和值</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">HGETALL</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>HEXISTS</li>
+</ul>
+<p>判断字段是否存在，存在返回1，否则返回0（如果键不存在也返回0）</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">HEXISTS</span> <span class="n">key</span> <span class="n">field</span>
+</pre></div>
+</td></tr></table></div>
+<p>其它hashs命令参考官方手册 ： <a class="reference external" href="http://redis.io/commands#hash">http://redis.io/commands#hash</a></p>
+</div>
+<span id="document-datatype_list"></span><div class="section" id="id1">
+<h3>列表类型<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>列表类型（list）可以存储一个有序的字符串列表，常用的操作是向列表两端添加元素，或者获得列表的某一个片段。</p>
+<p>列表类型内部是使用双向链表（double linked list）实现的，所以向列表两端添加元素的时间复杂度为O(1)，获取越接近两端的元素速度就越快。
+这意味着即使是一个有几千万个元素的列表，获取头部或尾部的10条记录也是极快的（和从只有20个元素的列表中获取头部或尾部的10条记录的速度是一样的）。</p>
+<p>这种特性使列表类型能非常快速地完成关系数据库难以应付的场景：
+如社交网站的新鲜事，我们关心的只是最新的内容，使用列表类型存储，
+即使新鲜事的总数达到几千万个，获取其中最新的100条数据也是极快的。
+同样因为在两端插入记录的时间复杂度是O(1)，列表类型也适合用来记录日志，可以保证加入新日志的速度不会受到已有日志数量的影响。</p>
+<p>常用命令如下：</p>
+<ul class="simple">
+<li>LPUSH</li>
+</ul>
+<p>向列表的左边增加元素，返回增加元素后列表的长度</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">LPUSH</span> <span class="n">key</span> <span class="n">value</span><span class="p">[</span> <span class="n">value</span><span class="o">..</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>RPUSH</li>
+</ul>
+<p>向列表的右边增加元素</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">RPUSH</span> <span class="n">key</span> <span class="n">value</span><span class="p">[</span> <span class="n">value</span><span class="o">..</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>LPOP</li>
+</ul>
+<p>从列表左边移除一个元素，并返回该元素值</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">LPOP</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>RPOP</li>
+</ul>
+<p>从列表的右侧移除一个元素，并返回该元素值</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">RPOP</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>LLEN</li>
+</ul>
+<p>返回列表元素个数，键不存在时返回0</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">LLEN</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>LRANGE</li>
+</ul>
+<p>获取列表片段，start和stop支持负数，-1表示右数第一个</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">LRANGE</span> <span class="n">key</span> <span class="n">start</span> <span class="n">stop</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>LREM</li>
+</ul>
+<p>删除列表中指定的值，返回删除的元素个数</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">LREM</span> <span class="n">key</span> <span class="n">count</span> <span class="n">value</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>LINDEX</li>
+</ul>
+<p>获取指定索引元素值</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">LINDEX</span> <span class="n">key</span> <span class="n">index</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>LSET</li>
+</ul>
+<p>设置指定索引的元素值</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">LSET</span> <span class="n">key</span> <span class="n">index</span> <span class="n">value</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>LTRIM</li>
+</ul>
+<p>只保留列表指定片段，删除其他元素</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">LTRIM</span> <span class="n">key</span> <span class="n">start</span> <span class="n">end</span>
+</pre></div>
+</td></tr></table></div>
+<p>其它命令参考官方手册 ： <a class="reference external" href="http://redis.io/commands#list">http://redis.io/commands#list</a></p>
+</div>
+<span id="document-datatype_sets"></span><div class="section" id="id1">
+<h3>集合类型<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>集合中的每个元素都不同，且没有顺序。</p>
+<p>常用命令如下：</p>
+<ul class="simple">
+<li>SADD</li>
+</ul>
+<p>增加一个或多个元素</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SADD</span> <span class="n">key</span> <span class="n">member</span><span class="p">[</span> <span class="n">member</span><span class="o">..</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>SREM</li>
+</ul>
+<p>移除一个或多个元素</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SREM</span> <span class="n">key</span> <span class="n">member</span><span class="p">[</span> <span class="n">member</span><span class="o">..</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>SMEMBERS</li>
+</ul>
+<p>获取集合中所有的元素</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SMEMBERS</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>SISMEMBER</li>
+</ul>
+<p>判断元素是否存在集合中</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SISMEMBER</span> <span class="n">key</span> <span class="n">member</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>SCARD</li>
+</ul>
+<p>获取集合的元素个数</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SCARD</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>SRANDMEMBER</li>
+</ul>
+<p>返回1个或count个随机元素</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SRANDMEMBER</span> <span class="n">key</span><span class="p">[</span> <span class="n">count</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>SDIFF</li>
+</ul>
+<p>集合差运算</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SDIFF</span> <span class="n">key</span><span class="p">[</span> <span class="n">key</span><span class="o">..</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>SINTER</li>
+</ul>
+<p>集合交集运算</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SINTER</span> <span class="n">key</span><span class="p">[</span> <span class="n">key</span><span class="o">..</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>SUNION</li>
+</ul>
+<p>集合并集运算</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SUNION</span> <span class="n">key</span><span class="p">[</span> <span class="n">key</span><span class="o">..</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<p>其它sets命令参考官方手册 :  <a class="reference external" href="http://redis.io/commands#set">http://redis.io/commands#set</a></p>
+</div>
+<span id="document-datatype_ordersets"></span><div class="section" id="id1">
+<h3>有序集合类型<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>在集合类型的基础上有序集合类型为每个元素都关联了一个分数，这使我们可以使用集合类型的操作之外，还能做与分数有关的操作。</p>
+<p>常用命令如下：</p>
+<ul class="simple">
+<li>ZADD</li>
+</ul>
+<p>增加一个带分数的元素，如果已存在，则替换分数</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ZADD</span> <span class="n">key</span> <span class="n">score</span> <span class="n">member</span><span class="p">[</span> <span class="n">score</span> <span class="n">member</span><span class="o">..</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>ZSCORE</li>
+</ul>
+<p>获得元素分数</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ZSCORE</span> <span class="n">key</span> <span class="n">member</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>ZRANGE</li>
+</ul>
+<p>获得排名在某个范围内的元素，返回按score升序排序的元素</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ZRANGE</span> <span class="n">key</span> <span class="n">start</span> <span class="n">end</span><span class="p">[</span> <span class="n">WITHSCORES</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>ZREVRANGE</li>
+</ul>
+<p>与zrange使用一致，返回按score降序的元素</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ZREVRANGE</span> <span class="n">key</span> <span class="n">start</span> <span class="n">end</span><span class="p">[</span> <span class="n">WITHSCORES</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>ZRANGEBYSCORE</li>
+</ul>
+<p>获得指定分数范围内的元素</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ZRANGEBYSCORE</span> <span class="n">key</span> <span class="nb">min</span> <span class="nb">max</span> <span class="n">WITHSCORES</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>ZREVRANGEBYSCORE</li>
+</ul>
+<p>获得指定分数范围内的元素,降序排序</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ZREVRANGEBYSCORE</span> <span class="n">key</span> <span class="nb">max</span> <span class="nb">min</span> <span class="n">WITHSCORES</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>ZINCREBY</li>
+</ul>
+<p>增加某个元素的分数</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ZINCREBY</span> <span class="n">key</span> <span class="n">increment</span> <span class="n">member</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>ZCARD</li>
+</ul>
+<p>获取集合中元素个数</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ZCARD</span> <span class="n">key</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>ZCOUNT</li>
+</ul>
+<p>获得指定分数范围内的元素个数</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ZCOUNT</span> <span class="n">KEY</span> <span class="nb">min</span> <span class="nb">max</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>ZREM</li>
+</ul>
+<p>删除一个或多个元素</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ZREM</span> <span class="n">key</span> <span class="n">member</span><span class="p">[</span> <span class="n">member</span><span class="o">..</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>ZRANK</li>
+</ul>
+<p>获取分数从小到大排序的位置</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ZRANK</span> <span class="n">key</span> <span class="n">member</span>
+</pre></div>
+</td></tr></table></div>
+<p>其它sorted_set命令参考官方手册 :  <a class="reference external" href="http://redis.io/commands#sorted_set">http://redis.io/commands#sorted_set</a></p>
+</div>
+</div>
+</div>
+<span id="document-redis_transactions"></span><div class="section" id="redis">
+<h2>redis事务<a class="headerlink" href="#redis" title="Permalink to this headline">¶</a></h2>
+<p>Redis 事务可以一次执行多个命令，并且带有以下两个重要的保证：</p>
+<ol class="arabic simple">
+<li>事务是一个单独的隔离操作：</li>
+</ol>
+<p>事务中的所有命令都会序列化、按顺序地执行。
+事务在执行的过程中，不会被其他客户端发送来的命令请求所打断。</p>
+<ol class="arabic simple" start="2">
+<li>事务是一个原子操作：</li>
+</ol>
+<p>事务中的命令要么全部被执行，要么全部都不执行。</p>
+<p>一个事务从开始到执行会经历以下三个阶段：</p>
+<ol class="arabic simple">
+<li>开始事务(multi)</li>
+<li>命令入队</li>
+<li>执行事务(exec)</li>
+</ol>
+<p>示例如下：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="n">MULTI</span>
+<span class="n">OK</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">var</span> <span class="mi">1</span>
+<span class="n">QUEUED</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="n">get</span> <span class="n">var</span>
+<span class="n">QUEUED</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="k">exec</span>
+<span class="mi">1</span><span class="p">)</span> <span class="n">OK</span>
+<span class="mi">2</span><span class="p">)</span> <span class="s2">&quot;1&quot;</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<span id="document-clients"></span><div class="section" id="redis">
+<h2>redis客户端<a class="headerlink" href="#redis" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<span id="document-client_c"></span><div class="section" id="c">
+<h3>c客户端<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h3>
+<p>Redis官方推荐的C客户端是hiredis，
+github地址：<a class="reference external" href="https://github.com/redis/hiredis">https://github.com/redis/hiredis</a></p>
+<div class="section" id="api">
+<h4>同步API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>redisConnect</li>
+</ul>
+<p>连接redis数据库（同步方式）</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">redisContext</span> <span class="o">*</span><span class="n">redisConnect</span><span class="p">(</span><span class="n">const</span> <span class="n">char</span> <span class="o">*</span><span class="n">ip</span><span class="p">,</span> <span class="nb">int</span> <span class="n">port</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<p>用法示例：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span> <span class="o">=</span> <span class="n">redisConnect</span><span class="p">(</span><span class="s2">&quot;127.0.0.1&quot;</span><span class="p">,</span> <span class="mi">6379</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="o">==</span> <span class="n">NULL</span> <span class="o">||</span> <span class="n">c</span><span class="o">-&gt;</span><span class="n">err</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Error: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">-&gt;</span><span class="n">errstr</span><span class="p">);</span>
+        <span class="o">//</span> <span class="n">handle</span> <span class="n">error</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Can&#39;t allocate redis context</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>redisCommand</li>
+</ul>
+<p>给redis发送命令</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="o">*</span><span class="n">redisCommand</span><span class="p">(</span><span class="n">redisContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="n">const</span> <span class="n">char</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span> <span class="o">...</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<p>用法示例：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">reply</span> <span class="o">=</span> <span class="n">redisCommand</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="s2">&quot;SET foo bar&quot;</span><span class="p">);</span>
+
+<span class="n">reply</span> <span class="o">=</span> <span class="n">redisCommand</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="s2">&quot;SET foo </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+
+<span class="n">reply</span> <span class="o">=</span> <span class="n">redisCommand</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="s2">&quot;SET foo %b&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="p">(</span><span class="n">size_t</span><span class="p">)</span><span class="n">valuelen</span><span class="p">);</span>
+
+<span class="n">reply</span> <span class="o">=</span> <span class="n">redisCommand</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="s2">&quot;SET key:</span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">myid</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>freeReplyObject</li>
+</ul>
+<p>释放redis资源</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">freeReplyObject</span><span class="p">(</span><span class="n">void</span> <span class="o">*</span><span class="n">reply</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<p>其它api参考hiredis.h</p>
+</div>
+<div class="section" id="id1">
+<h4>异步API<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>redisAsyncConnect</li>
+</ul>
+<p>连接redis数据库（异步方式）</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">redisAsyncConnect</span><span class="p">(</span><span class="n">const</span> <span class="n">char</span> <span class="o">*</span><span class="n">ip</span><span class="p">,</span> <span class="nb">int</span> <span class="n">port</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<p>示例代码：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">c</span> <span class="o">=</span> <span class="n">redisAsyncConnect</span><span class="p">(</span><span class="s2">&quot;127.0.0.1&quot;</span><span class="p">,</span> <span class="mi">6379</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">c</span><span class="o">-&gt;</span><span class="n">err</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Error: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">-&gt;</span><span class="n">errstr</span><span class="p">);</span>
+    <span class="o">//</span> <span class="n">handle</span> <span class="n">error</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>redisAsyncSetConnectCallback</li>
+</ul>
+<p>redis连接回调函数</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">redisAsyncSetConnectCallback</span><span class="p">(</span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">ac</span><span class="p">,</span> <span class="n">redisConnectCallback</span> <span class="o">*</span><span class="n">fn</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<p>示例代码：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">connectCallback</span><span class="p">(</span><span class="n">const</span> <span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="nb">int</span> <span class="n">status</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">status</span> <span class="o">!=</span> <span class="n">REDIS_OK</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Error: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">-&gt;</span><span class="n">errstr</span><span class="p">);</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Connected...</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">redisAsyncSetConnectCallback</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">connectCallback</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>redisAsyncSetDisconnectCallback</li>
+</ul>
+<p>redis断开连接的回调函数</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">redisAsyncSetDisconnectCallback</span><span class="p">(</span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">ac</span><span class="p">,</span> <span class="n">redisDisconnectCallback</span> <span class="o">*</span><span class="n">fn</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<p>示例代码：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">disconnectCallback</span><span class="p">(</span><span class="n">const</span> <span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="nb">int</span> <span class="n">status</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">status</span> <span class="o">!=</span> <span class="n">REDIS_OK</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Error: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">-&gt;</span><span class="n">errstr</span><span class="p">);</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Disconnected...</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">redisAsyncSetDisconnectCallback</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">disconnectCallback</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>redisAsyncCommand</li>
+</ul>
+<p>以异步方式给redis发送命令。</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">redisvAsyncCommand</span><span class="p">(</span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">ac</span><span class="p">,</span> <span class="n">redisCallbackFn</span> <span class="o">*</span><span class="n">fn</span><span class="p">,</span> <span class="n">void</span> <span class="o">*</span><span class="n">privdata</span><span class="p">,</span> <span class="n">const</span> <span class="n">char</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span> <span class="n">va_list</span> <span class="n">ap</span><span class="p">);</span>
+<span class="nb">int</span> <span class="n">redisAsyncCommand</span><span class="p">(</span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">ac</span><span class="p">,</span> <span class="n">redisCallbackFn</span> <span class="o">*</span><span class="n">fn</span><span class="p">,</span> <span class="n">void</span> <span class="o">*</span><span class="n">privdata</span><span class="p">,</span> <span class="n">const</span> <span class="n">char</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span> <span class="o">...</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<p>示例代码：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">getCallback</span><span class="p">(</span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="n">void</span> <span class="o">*</span><span class="n">r</span><span class="p">,</span> <span class="n">void</span> <span class="o">*</span><span class="n">privdata</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">redisReply</span> <span class="o">*</span><span class="n">reply</span> <span class="o">=</span> <span class="n">r</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">reply</span> <span class="o">==</span> <span class="n">NULL</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;argv[</span><span class="si">%s</span><span class="s2">]: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">char</span><span class="o">*</span><span class="p">)</span><span class="n">privdata</span><span class="p">,</span> <span class="n">reply</span><span class="o">-&gt;</span><span class="nb">str</span><span class="p">);</span>
+
+    <span class="o">/*</span> <span class="n">Disconnect</span> <span class="n">after</span> <span class="n">receiving</span> <span class="n">the</span> <span class="n">reply</span> <span class="n">to</span> <span class="n">GET</span> <span class="o">*/</span>
+    <span class="n">redisAsyncDisconnect</span><span class="p">(</span><span class="n">c</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">redisAsyncCommand</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">NULL</span><span class="p">,</span> <span class="n">NULL</span><span class="p">,</span> <span class="s2">&quot;SET key %b&quot;</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="n">argc</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">strlen</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="n">argc</span><span class="o">-</span><span class="mi">1</span><span class="p">]));</span>
+<span class="n">redisAsyncCommand</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">getCallback</span><span class="p">,</span> <span class="p">(</span><span class="n">char</span><span class="o">*</span><span class="p">)</span><span class="s2">&quot;end-1&quot;</span><span class="p">,</span> <span class="s2">&quot;GET key&quot;</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>redisAsyncDisconnect</li>
+</ul>
+<p>断开异步连接</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">redisAsyncDisconnect</span><span class="p">(</span><span class="n">redisAsyncContext</span> <span class="o">*</span><span class="n">ac</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<p>其它api参考async.h</p>
+</div>
+</div>
+<span id="document-client_python"></span><div class="section" id="python">
+<h3>python客户端<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
+<p>Redis官方推荐的Python客户端是redis-py，
+github地址： <a class="reference external" href="https://github.com/andymccurdy/redis-py">https://github.com/andymccurdy/redis-py</a></p>
+<p>安装方式：</p>
+<p>pip install redis</p>
+<p>或者</p>
+<p>easy_install redis</p>
+<p><strong>使用方法</strong></p>
+<p>1. 导入redis</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">redis</span>
+</pre></div>
+</td></tr></table></div>
+<p>2. 连接到redis</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">redis</span><span class="o">.</span><span class="n">StrictRedis</span><span class="p">()</span> <span class="c1"># 默认 127.0.0.1:6379</span>
+</pre></div>
+</td></tr></table></div>
+<p>也可以显式指定需要连接的地址：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">redis</span><span class="o">.</span><span class="n">StrictRedis</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span><span class="n">port</span><span class="o">=</span><span class="mi">6379</span><span class="p">,</span><span class="n">db</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="arabic simple" start="3">
+<li>操作redis</li>
+</ol>
+<p>以SET和GET命令为例：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">r</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s1">&#39;var&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">r</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;var&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>异步方式redis客户端请参考asyncio_redis：
+<a class="reference external" href="http://asyncio-redis.readthedocs.org/en/latest/">http://asyncio-redis.readthedocs.org/en/latest/</a></p>
+</div>
+</div>
+</div>
+<span id="document-redis_mq"></span><div class="section" id="redis">
+<h2>redis作为消息队列<a class="headerlink" href="#redis" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<span id="document-mq_workqueue"></span><div class="section" id="id1">
+<h3>工作队列模式<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>redis的队列实际在代码逻辑中不需要由我们自己实现，
+因此一个所谓的 RedisMQ 对象实际是一个 redis key以及对其操作的一些封装。</p>
+<p>可以通过list的lpush和rpop来模拟实现。</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="n">LPUSH</span> <span class="n">q1</span> <span class="mi">1</span>
+<span class="p">(</span><span class="n">integer</span><span class="p">)</span> <span class="mi">1</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="n">LPUSH</span> <span class="n">q1</span> <span class="mi">2</span>
+<span class="p">(</span><span class="n">integer</span><span class="p">)</span> <span class="mi">2</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="n">LPUSH</span> <span class="n">q1</span> <span class="mi">3</span>
+<span class="p">(</span><span class="n">integer</span><span class="p">)</span> <span class="mi">3</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="n">RPOP</span> <span class="n">q1</span>
+<span class="s2">&quot;1&quot;</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="n">RPOP</span> <span class="n">q1</span>
+<span class="s2">&quot;2&quot;</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="n">RPOP</span> <span class="n">q1</span>
+<span class="s2">&quot;3&quot;</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<p>如果是优先级队列可以用zset来实现。</p>
+</div>
+<span id="document-mq_pubsub"></span><div class="section" id="id1">
+<h3>订阅发布模式<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>实现思想很简单，Publisher调用redis的publish方法往特定的channel发送消息，Subscriber在初始化的时候要subscribe到该channel，一旦有消息就会立即接收。</p>
+<p>订阅消息（redis-cli终端1）：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SUBSCRIBE</span> <span class="n">first</span> <span class="n">second</span>
+</pre></div>
+</td></tr></table></div>
+<p>发布消息（redis-cli终端2）：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">PUBLISH</span> <span class="n">first</span> <span class="mi">1</span>
+<span class="n">PUBLISH</span> <span class="n">second</span> <span class="mi">2</span>
+</pre></div>
+</td></tr></table></div>
+<p>其它命令参考： <a class="reference external" href="http://redis.io/commands#pubsub">http://redis.io/commands#pubsub</a></p>
+<p>更多关于pubsub的描述详见：<a class="reference external" href="http://redis.io/topics/pubsub">http://redis.io/topics/pubsub</a></p>
+</div>
+</div>
+<p>Redis作为消息队列与RabbitMQ的性能对比:</p>
+<p><a class="reference external" href="http://zqdevres.qiniucdn.com/data/20110714104018/index.html">http://zqdevres.qiniucdn.com/data/20110714104018/index.html</a></p>
+</div>
+<span id="document-script_support"></span><div class="section" id="id1">
+<h2>脚本支持<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Redis提供了通过eval命令来执行Lua 5.1脚本。</p>
+<p>下面通过几个小例子来讲述如何在Redis服务端执行Lua脚本。</p>
+<ul class="simple">
+<li>redis-cli中直接执行lua脚本</li>
+</ul>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="nb">eval</span> <span class="s2">&quot;return redis.call(&#39;set&#39;,&#39;var&#39;,&#39;123&#39;)&quot;</span> <span class="mi">0</span>
+<span class="n">OK</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="n">get</span> <span class="n">var</span>
+<span class="s2">&quot;123&quot;</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">6379</span><span class="o">&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>bash调用redis-cli执行</li>
+</ul>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span>~$ redis-cli EVAL &quot;return redis.call(&#39;set&#39;,&#39;var&#39;,&#39;456&#39;)&quot; 0
+OK
+~$ redis-cli GET var
+&quot;456&quot;
+~$
+</pre></div>
+</td></tr></table></div>
+<p>如果lua脚本内容比较长，可以将lua脚本写入文件，
+然后通过redis-cli执行：</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span>~$ cat test1.lua
+local msg = &quot;test1&quot;
+print(msg)
+redis.call(&#39;set&#39;,&#39;var&#39;,msg)
+return msg
+~$ redis-cli EVAL &quot;$(cat test1.lua)&quot; 0
+&quot;test1&quot;
+~$ redis-cli get var
+&quot;test1&quot;
+</pre></div>
+</td></tr></table></div>
+</div>
+<span id="document-persistent"></span><div class="section" id="id1">
+<h2>持久化<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+</div>
+<span id="document-redis_cluster"></span><div class="section" id="id1">
+<h2>集群<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+</div>
+<span id="document-redis_rpc"></span><div class="section" id="rpc">
+<h2>RPC调用<a class="headerlink" href="#rpc" title="Permalink to this headline">¶</a></h2>
+</div>
+<span id="document-redis_mysql"></span><div class="section" id="mysql">
+<h2>与mysql交互<a class="headerlink" href="#mysql" title="Permalink to this headline">¶</a></h2>
+<p>mysql2redis</p>
+<p><a class="reference external" href="https://github.com/dawnbreaks/mysql2redis">https://github.com/dawnbreaks/mysql2redis</a></p>
+<p><a class="reference external" href="https://wp.iirii.com/archives/%E6%80%8E%E6%A0%B7%E5%AE%89%E8%A3%85mysql2redis%E7%AC%94%E8%AE%B0%E6%91%98%E8%A6%81/">https://wp.iirii.com/archives/%E6%80%8E%E6%A0%B7%E5%AE%89%E8%A3%85mysql2redis%E7%AC%94%E8%AE%B0%E6%91%98%E8%A6%81/</a></p>
+</div>
 </div>
 </div>
 
@@ -194,13 +1172,6 @@
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="install.html" class="btn btn-neutral float-right" title="redis安装及配置" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-    </div>
   
 
   <hr/>
