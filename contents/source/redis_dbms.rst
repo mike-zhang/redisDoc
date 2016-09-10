@@ -23,6 +23,12 @@ redis desktop
 
 https://redisdesktop.com/
 
+需要关闭保护模式才可以连接成功。
+
+redis 关闭保护模式：
+::
+
+    redis-server --protected-mode no
 
 
    
