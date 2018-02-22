@@ -108,7 +108,8 @@ redis安装及配置
 
     requirepass foobared
 
-16. 设置同一时间最大客户端连接数，默认无限制，Redis可以同时打开的客户端连接数为Redis进程可以打开的最大文件描述符数，如果设置 maxclients 0，表示不作限制。当客户端连接数到达限制时，Redis会关闭新的连接并向客户端返回max number of clients reached错误信息
+16. 设置同一时间最大客户端连接数，默认无限制，用于Redis可以同时打开的客户端连接数为Redis进程可以打开的最大文件描述符数，如果设置 maxclients 0，表示不作限制。
+当客户端连接数到达限制时，Redis会关闭新的连接并向客户端返回max number of clients reached错误信息
 
     maxclients 128
 
@@ -125,8 +126,11 @@ redis安装及配置
      appendfilename appendonly.aof
 
 20. 指定更新日志条件，共有3个可选值：
+
     no：表示等操作系统进行数据缓存同步到磁盘（快）
+    
     always：表示每次更新操作后手动调用fsync()将数据写到磁盘（慢，安全）
+    
     everysec：表示每秒同步一次（折衷，默认值）
 
     appendfsync everysec
